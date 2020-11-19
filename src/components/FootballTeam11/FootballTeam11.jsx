@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import footballData from '../../data/footballData'
-import uuid from "uuid/v4";
+import { v4 as uuid } from 'uuid'
 
 console.log(footballData);
 const columnsFromBackend = {
