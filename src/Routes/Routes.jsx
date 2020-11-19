@@ -6,7 +6,6 @@ import FootballTeam11 from "../components/FootballTeam11"
 
 
 const Routes = () => {
-
   return (
     <Router>
         <WeatherAPI path='weather'/>
