@@ -3,7 +3,6 @@ import { DragDropContext, Draggable, Droppable } from "react-beautiful-dnd";
 import footballData from '../../data/footballData'
 import { v4 as uuid } from 'uuid'
 
-console.log(footballData);
 const columnsFromBackend = {
   [uuid()]: {
     name: "Whole Team",
@@ -108,7 +107,7 @@ function FootballTeam11() {
                           return (
                             <Draggable
                               key={item.id}
-                              draggableId={item.id}
+                              draggableId={"" + item.id}
                               index={index}
                             >
                               {(provided, snapshot) => {
